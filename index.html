@@ -10,6 +10,8 @@
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/rightqq.css" rel="stylesheet">
+	
     <style>
 
     /* GLOBAL STYLES
@@ -257,6 +259,16 @@
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
+	<!--右侧聊天窗口-->
+	<style>
+	#cs_box {width:120px; height:220px; color:#FFF; background:#54a7ff; position:fixed; right:10px; top:100px; border-radius:10px; z-index:1000}
+	#cs_box span {height:20px; line-height:20px;display:block;}
+	.cs_close {color:#FFF; position:absolute; right:10px; top:8px; cursor:pointer; font-size:20px;font-family:Verdana, Geneva, sans-serif}
+	.cs_title {font-size:14px; margin:10px; font-weight:bold;}
+	.cs_img {width:100px; height:100px; background:#FFF; margin:10px;background-image:url(http://demo.lanrenzhijia.com/2014/service1119/images/lanrenzhijia.jpg) }
+	.cs_info {font-size:12px; margin:0px 10px; overflow:hidden; text-align:center;}
+	.cs_btn {width:100px; height:25px; background:#333; margin:5px 10px; border-radius:5px; font-size:12px; line-height:25px; color:#FFF; text-align:center; cursor:pointer;}
+	</style>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -463,5 +475,61 @@
       }(window.jQuery)
     </script>
     <script src="assets/js/holder/holder.js"></script>
+
+	<!-- 代码部分 begin -->
+<div class="main-im">
+	<div id="open_im" class="open-im">&nbsp;</div>  
+	<div class="im_main" id="im_main">
+		<div id="close_im" class="close-im"><a href="javascript:void(0);" title="点击关闭">&nbsp;</a></div>
+		<a href="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=871334842&o=91inn.cn&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" target="_blank" class="im-qq qq-a" title="在线QQ客服">
+			<div class="qq-container"></div>
+			<div class="qq-hover-c"><img class="img-qq" src="assets\self\qq.png"></div>
+			<span> QQ在线咨询</span>
+		</a>
+		<div class="im-tel">
+			<div>售前咨询热线</div>
+			<div class="tel-num">400-123-45678</div>
+			<div>售后咨询热线</div>
+			<div class="tel-num">010-12345678</div>
+		</div>
+		<div class="im-footer" style="position:relative">
+			<div class="weixing-container">
+				<div class="weixing-show">
+					<div class="weixing-txt">微信扫一扫<br>开始咨询</div>
+					<img class="weixing-ma" src="assets\self\weixin.jpg">
+					<div class="weixing-sanjiao"></div>
+					<div class="weixing-sanjiao-big"></div>
+				</div>
+			</div>
+			<div class="go-top"><a href="javascript:;" title="返回顶部"></a> </div>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	$('#close_im').bind('click',function(){
+		$('#main-im').css("height","0");
+		$('#im_main').hide();
+		$('#open_im').show();
+	});
+	$('#open_im').bind('click',function(e){
+		$('#main-im').css("height","272");
+		$('#im_main').show();
+		$(this).hide();
+	});
+	$('.go-top').bind('click',function(){
+		$(window).scrollTop(0);
+	});
+	$(".weixing-container").bind('mouseenter',function(){
+		$('.weixing-show').show();
+	})
+	$(".weixing-container").bind('mouseleave',function(){        
+		$('.weixing-show').hide();
+	});
+});
+</script>
+
+
   </body>
 </html>
