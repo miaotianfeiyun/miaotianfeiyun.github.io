@@ -337,8 +337,11 @@
               <!--<h1>驼梁简介.</h1>-->
               <p class="lead">驼梁位于河北省平山县西北部，东距石家庄市115公里，距革命圣地西柏坡75公里，距佛教圣地五台山45公里，是连接两圣地最便捷的中转景区和度假区。景区总面积158平方公里，由百瀑峡、三叠泉、云顶草原等200多个景点组成。主峰海拔2281米，系河北省五大高峰之一。</p>
               <!--<a class="btn btn-large btn-primary" href="#">查看更多</a>-->
+			
             </div>
+			
           </div>
+		   <p class="pull-right">位于河北省平山县西北部，东距</p>
         </div>
         <div class="item">
           <img src="assets/self/top2.jpg" alt="2">
@@ -379,8 +382,8 @@
 		<div class="span3" >
 			<div id="myCarousel1" class="carousel slide">
 			   <!-- 轮播（Carousel）导航 -->
-			   <a class="carousel-control left" href="#myCarousel1"  data-slide="prev">&lsaquo;</a>
-			   <a class="carousel-control right" href="#myCarousel1"  data-slide="next"  >&rsaquo;</a>
+			   <!--<a class="carousel-control left" href="#myCarousel1"  data-slide="prev">&lsaquo;</a>
+			   <a class="carousel-control right" href="#myCarousel1"  data-slide="next"  >&rsaquo;</a>-->
 			   <!-- 轮播（Carousel）项目 -->
 			   <div class="carousel-inner">
 				  <div class="item active" style="width:270px;height:180px;">
@@ -489,7 +492,7 @@
         $(function(){
           // carousel demo
           $('#myCarousel').carousel();
-		   $('#myCarousel1').carousel()
+		   $('#myCarousel1').carousel({interval: 2000 })
         })
       }(window.jQuery)
     </script>
