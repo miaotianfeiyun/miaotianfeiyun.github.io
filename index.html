@@ -273,9 +273,9 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
 
   <body>
@@ -336,7 +336,7 @@
             <div class="carousel-caption">
               <!--<h1>驼梁简介.</h1>-->
               <p class="lead">驼梁位于河北省平山县西北部，东距石家庄市115公里，距革命圣地西柏坡75公里，距佛教圣地五台山45公里，是连接两圣地最便捷的中转景区和度假区。景区总面积158平方公里，由百瀑峡、三叠泉、云顶草原等200多个景点组成。主峰海拔2281米，系河北省五大高峰之一。</p>
-              <a class="btn btn-large btn-primary" href="#">查看更多</a>
+              <!--<a class="btn btn-large btn-primary" href="#">查看更多</a>-->
             </div>
           </div>
         </div>
@@ -346,7 +346,7 @@
             <div class="carousel-caption">
              <!-- <h1>Another example headline.</h1>-->
               <p class="lead">这里是河的源头，林的海洋，花的世界，瀑的舞台，云的故乡，以凉、静、野、幽、翠著称。驼梁良好的生态环境使这里负氧离子含量高出一般工作环境100—400倍，犹如一座特大型天然氧吧。驼梁四季景色亦梦亦幻，人人游山山各异，次次登山山不同，被誉为一部意境深邃的“山水红楼梦”.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+              <!--<a class="btn btn-large btn-primary" href="#">Learn more</a>-->
             </div>
           </div>
         </div>
@@ -356,7 +356,7 @@
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+             <!-- <a class="btn btn-large btn-primary" href="#">Browse gallery</a>-->
             </div>
           </div>
         </div>
@@ -375,28 +375,46 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="span3">
-          <img class="img-circle" data-src="holder.js/140x140" src="assets\self\top1.jpg">
-          <center><h2>春</h2></center>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+       
+		<div class="span3" >
+			<div id="myCarousel1" class="carousel slide">
+			   <!-- 轮播（Carousel）导航 -->
+			   <a class="carousel-control left" href="#myCarousel1"  data-slide="prev">&lsaquo;</a>
+			   <a class="carousel-control right" href="#myCarousel1"  data-slide="next"  >&rsaquo;</a>
+			   <!-- 轮播（Carousel）项目 -->
+			   <div class="carousel-inner">
+				  <div class="item active" style="width:270px;height:180px;">
+					 <img  class="img-circle" style="width:270px;height:180px;" data-src="holder.js/140x140" src="assets\self\top1.jpg">
+				  </div>
+				  <div class="item" style="width:270px;height:180px;">
+					 <img class="img-circle" style="width:270px;height:180px;" data-src="holder.js/140x140" src="assets\self\top2.jpg">
+				  </div>
+				  <div class="item" style="width:270px;height:180px;">
+					<img class="img-circle" style="width:270px;height:180px;" data-src="holder.js/140x140" src="assets\self\top3.jpg">
+				  </div>
+			</div>
+		  
+		</div>
+          <center><h2>住宿</h2></center>
+          <p>住宿提供标准间和三人间，独立卫生间，能适合大多数人的出行需求.</p>
+          <p><a class="btn" href="#">预定;</a></p>
         </div><!-- /.span4 -->
         <div class="span3">
           <img class="img-circle" data-src="holder.js/140x140" src="assets\self\top4.jpg">
-          <center><h2>夏</h2></center>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <center><h2>美食</h2></center>
+          <p>所有食材均是在家菜地里种的或者是从山上采的，比如蕨菜、松蘑、黄花菜、笨鸡蛋.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span3">
           <img class="img-circle" data-src="holder.js/140x140" src="assets\self\top3.jpg">
-          <center><h2>秋</h2></center>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <center><h2>娱乐</h2></center>
+          <p>各种娱乐.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
 		<div class="span3">
           <img class="img-circle" data-src="holder.js/140x140" src="assets\self\top5.jpg">
           <center><h2>冬</h2></center>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>所有食材均是在家菜地里种的或者是从山上采的，比如蕨菜、松蘑、黄花菜、笨鸡蛋..</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
@@ -470,7 +488,8 @@
       !function ($) {
         $(function(){
           // carousel demo
-          $('#myCarousel').carousel()
+          $('#myCarousel').carousel();
+		   $('#myCarousel1').carousel()
         })
       }(window.jQuery)
     </script>
